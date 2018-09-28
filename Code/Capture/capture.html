@@ -11,16 +11,10 @@
     <video id="videoInput" width=320 height=240></video>
 </div>
 <canvas id="output" width=320 height=240 style="max-width: 100%"></canvas>  
-<!-- <script src="https://webrtc.github.io/adapter/adapter-5.0.4.js" type="text/javascript"></script> -->
 <script type="text/javascript">
 
 let streaming = false;
 let videoInput = document.getElementById('videoInput');
-let startAndStop = document.getElementById('startAndStop');
-
-startAndStop.addEventListener('click', () => {
-    onVideoStarted()
-});
 
 function start() {
   let output = document.getElementById('output');
